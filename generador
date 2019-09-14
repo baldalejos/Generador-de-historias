@@ -1,0 +1,80 @@
+# Created by Chimerrox. 
+# Adapted to spanish by Javier Balda 
+import random
+theme=random.choice(["aeropuerto","desierto australiano","cuarto de Martina","poemario para zurdos,","techno iraki,"])
+# gens setting
+if theme == "aeropuerto":
+    subsetting=random.choice(["America","China","Europa","Korea del norte","Africa","Mejico","Japon","Australia","las Bahamas"])
+    setting=random.choice(["un pequeño pueblo en ","una gran ciudad en ","una granja en ","un colegio en ","la zona de marcha de ","los suburbios en ","los barrios pobres en ","el oceano","el planeta"])
+    if setting != "el oceano" and setting != "el planeta":
+        setting=setting+subsetting
+    age=random.choice(["un recien nacido ","un niñito muy feo ","un chaval ","un lumbreras cejijunto ","un adolescente perturbado ","un mayor de edad responsable ","un adulto  ","un madurito sexy ","un viejo verde "])
+    race=random.choice(["caucasico ","africano ","hispano ","arabe ","asiatico "])
+    gengender=random.randint(0,100)
+    if gengender <= 10:
+         gender = ("transexual")
+    if gengender >= 9:
+         if gengender >= 47:
+             gender = ("de Vox")
+         if gengender <= 46:
+             gender = ("del PP")
+    protagonist=age+race+gender
+    antagonist=random.choice(["una mujer ","un hombre ","un dictador","una empresa","un gobierno","una cancion","el trafico","la religion","un deseo","un rival","la ley","un viejo amigo","un perro","una prostituta","un fotodepilador de bolsillo"])
+if theme == "desierto australiano":
+    setting=random.choice(["el gran imperio","una zona de dunas","una tierra corrupta hasta las trancas","un oasis magico","un laberinto tortuoso","las islas flotantes","una roca mistica","un congelado grifo de cerveza","un peligroso kanguro mazao"])
+    gender=random.choice(["un humano ","un demonio ","un macho ","un angel ","un transexual ","un seductor ","un rapero ","un testigo de jehova ","un elfo "])
+    race=random.choice(["bizco "," humanoide ","conductor de autobus ",", gafoso ","violento ","barbudo ","cabron ","triste ","bajito ","bisexual ","salido ","gordo "])
+    classs=random.choice(["y francotirador de profesion","y guerrero por naturaleza","y mago","y ladron","y navajero","y trilero","y tartamudo","y un poco pajillero","y podemita","y un poco homofobo","y sietemesino","y demasiado monarquico","y muy beato"])
+    protagonist = gender+race+classs
+    antagonist=random.choice(["un skater de la vieja escuela","un marimacho","un sin verguenza","un dios","un fugitivo escurridizo","un gigante","un ejercito invasor","un monstruo","un tirano","una señora gorda","una viuda alegre","un timador","un esperpento","un mariposon"])
+if theme == "cuarto de Martina":
+    setting=random.choice(["lo mas profundo del armario","la ventana","lo alto de la cama","la mesa donde hace los deberes","la habitacion de Olivia","la habitacion de sus padres","el baño del pasillo","al escondite secreto","el ordenador"])
+    protagonist=random.choice(["un perro","un calcetin usado","un diario magico","un duende","un moco seco","un marco de fotos","un pantalon roto","un poster"])
+    antagonist=random.choice(["de su hermana","los 40 principales","un ataque de ira","su madre enfadada","el pesado del tio","las fauces de Cloe","la abuela Juani","su amiga Alejandra","la tia Ana","Siri, la asistente telefonica","los limites de la salubridad","su padre recien levantado","los BTS al finalizar la gira"])
+if theme == "poemario para zurdos,":
+    setting=random.choice(["la perdida del estres","el mundo religioso","la busqueda de tu yo interior","la edad media","el renacimiento","la era industrial","la primera guerra mundial","la segunda guerra mundial","the Modern Era"])
+    if setting == "la perdida del estres":
+        figures=["Abraham Lincoln","George W. Bush Jr.","Benjamin Franklin","Donald Trump","Ronald Reagan","John Adams","Hilary Clinton","King George III","King George Washington","Andrew Jackson","Thomas Edison","Steve Jobs"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    if setting == "el mundo religioso":
+        figure=random.choice(["Jesus","Muhammad","Buddha","Krishna","Moses","L. Ron Hubbard","Joseph Smith","Zeus","Ra","Thor"])
+        antagonist=random.choice(["el Cristianismo","el Islam","el Hinduismo","el Budismo","la mitologia griega","la Cienciologia ","los Mormones","el Paganismo","la herejia","el confucionismo"])
+    if setting == "la busqueda de tu yo interior":
+        figures=["Alejandro el magnifico","Julio Cesarr","Aristoteles","King Tut","Qin Shi Huang","Homero","Augusto","Platon","Cleopatra","Ashoka","Atila, el rey de los Hunos","Leonidas"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    if setting == "la edad media":
+        figures=["Charlemagne","Ghenghis Khan","Saladin","William el conquistador","Ragnar Lodbrok","Oda Nobunaga","King Richard III","William Wallace","El Cid","Eleanor of Aquitaine","Erik el rojo","Vlad el empalador"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    if setting == "el renacimiento":
+        figures=["Marco Polo","Juana de  Arco","Christopher Columbus","Blackbeard","Leonardo da Vinci","William Shakespeare","Henry VIII","Michelangelo","Donatello","Galileo","Admiral Yi Sun-sin","Suleiman el Magnanimo"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    if setting == "la era industrial":
+        figures=["Henry Ford","Karl Marx","Charles Dickens","John D. Rockefeller","Thomas Edison","Nikola Tesla","Amelia Earheart","Frank C. Mars","Albert Einstein","Napoleon","Gandhi","Mark Twain"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    if setting == "la primera guerra mundial":
+        figure=random.choice(["Woodrow Wilson","Winston Churchill","Tsar Nicholas II","Lenin","Paul von Hindenburg","Ataturk"])
+        antagonist=random.choice(["el imperio Otomano","Alemania","los estados unidos","Gran Bretaña","Austria-Hungria","Francia"])
+    if setting == "la segunda guerra mundial":
+        figure=random.choice(["Hitler","Queen Elizabeth","Franklin D. Roosevelt","Joseph Stalin","Harry Truman","General Hideki Tojo"])
+        antagonist=random.choice(["los estados unidos","Alemania","la union Sovietica","el Reino Unido","Japon","Italia"])
+    if setting == "la era moderna":
+        figures=["Obama","Putin","Kim Jong-un","Kanye West","Bill Gates","Guido van Rossum","The Beatles","ISIS","Pope Francis","Mike Tyson","Pewdiepie","Hilary Cliton"]
+        figure=random.choice(figures)
+        antagonist=random.choice(figures)
+    afigure=("una persona llamada ")     
+    protagonist= afigure+figure     
+if theme == "techno iraki,":
+    setting=random.choice(["los ritmos mas hipnotizantes","las notas mas vibrantes","la esencia musical","la utopia sonora","la brecha reguetonera ","el house mas transgresivo","la livido sonora","un generador de frecuencias","la verdad de los silencios"])
+    gender=random.choice(["un diskjokey automatico anarquista ","un teclado con distorsionador ","un subwofer enorme ","un twiter rompe cristales ""un cable canon-jack en la  mesa de mezclas ","un pedal loop ","un sampleador bionico ","un sintetizador policromatico ","un multiefectos para bajo","un multipistas ","un bafle gigante de marca pioner ","un secuenciador anacronico ","un amplificador de  potencia brutal "])
+    classs=random.choice(["muy caro","ultimo modelo","de lo mas envolvente","tan raro como codiciado","robado en los locales de ensayo","traido directamente de alemania","de lo mas puntero","","muy underground","muy ensordecedor","de estilo vintage"])
+    protagonist=gender+classs
+    antagonist=random.choice(["los gustos folcloricos de la gente","todas las fiestas bacaletas","la musica clasica","el regueton mas obsceno","la inteligencia artificial musical","el spoty de pago","una nueva tecnologia","robots","la musica gratis de internet ","las bandas de rock y las tunas compostelanas"])
+conflict=random.choice(["se enamoro de ","lucho en contra de ","intento destruir a ","se defendio de ","se metio en lios con","intento ser amigo de ","experimento con ","trato de evadir a ","compitio contra ","se paso de la raya con ","se vengo contra "])
+end=random.choice(["Aquello no acabo bien.","Tuvo gran influencia en como evoluciono la sociedad por ello.","Nadie jamas volvio a saber nada.","Vivieron felices el resto de sus dias.","No te sigo contando que es muy fuerte","Tuvo un triste final que ya nadie recuerda.","Paso a formar parte de la historia mas reciente","Revistas del sector hicieron eco de la noticia","Fue glorosio.","Todo el mundo en aquel lugar sabia que eso ocurriria.","Menuda movida.","Parece mentira de raro que resulta.","Se lio la de dios es cristo.","Pudo ser incluso peor.","Nadie se preocupo por ello."])
+print("En el",theme,"de camino hacia %s," % setting,"habia  %s" % protagonist, "que %s" % conflict+"%s." % antagonist,end)
+
